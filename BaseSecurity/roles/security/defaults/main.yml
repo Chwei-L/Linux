@@ -3,8 +3,8 @@
 hosts_allow: {ssh: ['1.*.*.*']}
 
 # admin user password
-admin_password: "123456"
-china_password: "123456"
+admin_password: "RTse234@ew9"
+china_password: "RTse234@ew9"
 
 # admin ssh key
 admin_ssh_key: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
