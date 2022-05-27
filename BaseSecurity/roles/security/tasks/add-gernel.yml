@@ -1,0 +1,30 @@
+- name: Ensure sudo group is present
+  group:
+    name: sudo
+    state: present
+
+- name: Ensure gernel group is present
+  group:
+    name: gernel
+    state: present
+
+- name: Create gernel user
+  user:
+    name: gernel
+    state: present
+    group: gernel
+    groups: "sudo"
+    password: "{{ gernel_password | password_hash('sha512') }}"
+    update_password: on_create
+
+- name: Grant gernel user passwordless sudo
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^gernel'
+    line: 'gernel ALL=(ALL) NOPASSWD: ALL'
+
+- name: Add public key to gernel user authorized keys
+  authorized_key:
+    user: gernel
+    key: "{{ gernel_ssh_key }}"

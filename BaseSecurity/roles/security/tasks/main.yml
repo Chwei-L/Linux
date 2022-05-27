@@ -1,6 +1,6 @@
 ---
 - include: add-admin.yml
-- include: add-china.yml
+- include: add-gernel.yml
 - include: disable_services.yml
 - include: log.yml
 - include: ssh.yml

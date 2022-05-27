@@ -1,6 +1,6 @@
 ---
 # allow host login
-hosts_allow: {ssh: ['1.*.*.*']}
+hosts_allow: {ssh: ['*.*.*.*']}
 
 # admin user password
 admin_password: "RTse234@ew9"
