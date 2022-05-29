@@ -24,7 +24,7 @@
     regexp: '^gernel'
     line: 'gernel ALL=(ALL) NOPASSWD: ALL'
 
-- name: Add public key to gernel user authorized keys
-  authorized_key:
-    user: gernel
-    key: "{{ gernel_ssh_key }}"
+#- name: Add public key to gernel user authorized keys
+#  authorized_key:
+#    user: gernel
+#    key: "{{ gernel_ssh_key }}"
