@@ -82,7 +82,6 @@
    - {path: /etc/services, mode: 644, state: file}
    - {path: /etc/security, mode: 600, state: directory}
    - {path: /var/log/pacct, mode: 600, state: directory}
-   - {path: /etc/rsyslog.d/21-cloudinit.conf, mode: 640, state: file}
   ignore_errors: yes
 
 - name: 禁止ICMP重定向
