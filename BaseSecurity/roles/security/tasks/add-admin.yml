@@ -24,7 +24,7 @@
     regexp: '^admin'
     line: 'admin ALL=(ALL) NOPASSWD: ALL'
 
-- name: Add public key to admin user authorized keys
-  authorized_key:
-    user: admin
-    key: "{{ admin_ssh_key }}"
+#- name: Add public key to admin user authorized keys
+#  authorized_key:
+#    user: admin
+#    key: "{{ admin_ssh_key }}"
