@@ -83,12 +83,6 @@
    - {path: /etc/security, mode: 600, state: directory}
    - {path: /var/log/pacct, mode: 600, state: directory}
    - {path: /etc/rsyslog.d/21-cloudinit.conf, mode: 640, state: file}
-   - {path: /etc/xinetd.conf, mode: 600, state: file}
-   - {path: /etc/grub.conf, mode: 600, state: file}
-   - {path: /boot/grub/grub.conf, mode: 600, state: file}
-   - {path: /etc/grub2.cfg, mode: 600, state: file}
-   - {path: /etc/lilo.conf, mode: 600, state: file}
-   - {path: /boot/grub2/grub.cfg, mode: 600, state: file}
   ignore_errors: yes
 
 - name: 禁止ICMP重定向
